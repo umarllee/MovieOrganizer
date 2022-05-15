@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+.header { 
+    background: #496DDB;
+    padding: 10px calc(54% - 500px) 10px;
+}
+
+.header__title {
+    font-family: 'Luckiest Guy', cursive;
+    color: #FFEEDB;
+    font-size: 45px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
