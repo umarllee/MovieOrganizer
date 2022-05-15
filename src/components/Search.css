@@ -1,15 +1,13 @@
 .search-box__form {
     display: flex;
-    width: 40%;
-    margin-left: 17%;
-    margin-top: 3%;
+    width: 100%;
 }
 
 .search-box__form-label {
     display: inline-block;
     font-size: 14px;
     margin-right: 10px;
-    width: 60%;
+    width: 55%;
 } 
 
 .search-box__form-input {

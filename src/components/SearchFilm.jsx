@@ -4,7 +4,7 @@ import './Search.css';
 function SearchBox({ onSearch }) {
 
     const [searchStr, setSearchStr] = useState(['']);
-
+ 
     return (
         <div className="search-box">
             <form className="search-box__form" onSubmit={onSearch}>
@@ -16,10 +16,15 @@ function SearchBox({ onSearch }) {
                         className="search-box__form-input"
                         placeholder="Lucifer, Harry Potter,..."
                         onChange={e => setSearchStr(e.target.value)}
+                        value={searchStr}
                     />
                 </label>
 
-                <button type="submit" className="search-box__form-submit" disabled={!searchStr}>
+                <button
+                    type="submit"
+                    className="search-box__form-submit"
+                    disabled={!searchStr}
+                >
                     Search
                 </button>
             </form>

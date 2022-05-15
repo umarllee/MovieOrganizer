@@ -1,0 +1,16 @@
+
+.container{
+    display: flex;
+    margin-top: 3%;
+}
+
+.searchList{
+    width: 45%;
+    margin-left: 15%;
+}
+
+.favList{
+    margin-left: 1%;
+    width: 27%;
+}
+

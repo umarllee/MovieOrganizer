@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
-import searchMovies  from '../api';
+import React, { useState } from 'react'
+import searchMovies from '../api';
+import './mainPage.css'
 import Search from '../components/SearchFilm'
 import MovieList from '../components/MovieList'
+import Favorites from '../components/Favorites'
 
-
-export default function  MainPage(){
+export default function MainPage() {
 
     const [films, setFilms] = useState([]);
 
@@ -20,11 +21,19 @@ export default function  MainPage(){
             console.log(error);
         }
     }
-    
+
     return (
-        <div className='container'>
-            <Search onSearch={onSearchHandle}/>
-            <MovieList moviesList={films}/>
+        <div className="container">
+            <div className="searchList">
+                <Search onSearch={onSearchHandle} />
+                <MovieList moviesList={films} />
+            </div>
+
+            <div className="favList">
+                <Favorites />
+            </div>
+
+
         </div>
     )
 }
