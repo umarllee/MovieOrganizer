@@ -7,7 +7,7 @@ const MovieList = ({ moviesList }) => {
         <div style={{marginTop: '6%'}} >
             {moviesList?.length ?
                 moviesList.map((m) =>
-                    <MovieListItem movie={m}/>)
+                    <MovieListItem key={m.imdbID} movie={m}/>)
                 : ''}
         </div>
     )

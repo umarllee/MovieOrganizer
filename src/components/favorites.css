@@ -32,3 +32,21 @@
     opacity: 0.9;
     transition: all 0.2s linear;
 }
+
+.listItem{
+    border: 1px solid rgb(221, 215, 215);
+    list-style: none;
+    padding: 2%;
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delBtn{
+    height: 20px;
+    background-color: rgb(165, 10, 10);
+    border: 1px solid rgb(165, 10, 10);
+    color: #fff;
+    font-weight: 700;
+   
+}
