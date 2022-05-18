@@ -1,5 +1,5 @@
 import apiInfo from './apiInfo.json'
-
+ 
 function searchMovies (searchItem){
     const url = new URL(apiInfo.baseUrl);
     url.searchParams.set('s', searchItem);

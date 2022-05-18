@@ -5,7 +5,7 @@ function SearchBox({ onSearch }) {
 
     const [searchStr, setSearchStr] = useState(['']);
  
-    return (
+    return ( 
         <div className="search-box">
             <form className="search-box__form" onSubmit={onSearch}>
                 <label className="search-box__form-label">
