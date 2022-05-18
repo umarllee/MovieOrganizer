@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './navigation.css';
 
 class Navbar extends Component {
-    render() { 
+    render() {
         return (
             <div className="header">
                 <h1 className="header__title">
@@ -12,5 +12,5 @@ class Navbar extends Component {
         );
     }
 }
- 
+
 export default Navbar;

@@ -5,10 +5,14 @@ import App from './App';
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from 'react-redux'
 import listReducer from './features/reduxStorage'
+import favRed from './features/favouriteSlice'
+import apiReducer from './features/apiSlice'
 
 const store = configureStore({
   reducer: {
     favs: listReducer,
+    favourite: favRed,
+    api: apiReducer,
   },
 })  
 const root = ReactDOM.createRoot(document.getElementById('root'));

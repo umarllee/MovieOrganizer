@@ -27,6 +27,22 @@
     
 }
 
+.favorites-remove{
+    display: none;
+}
+
+.go-remove{
+    display: none;
+}
+.go-link{
+    background-color: #496DDB;
+    padding: 9px 20px;
+    text-decoration: none; 
+    color: #fff;
+    font-size: 14px;
+}
+
+
 .favorites__save:hover {
     cursor: pointer;
     opacity: 0.9;

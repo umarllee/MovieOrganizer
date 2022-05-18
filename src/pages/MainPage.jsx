@@ -1,21 +1,24 @@
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
 import searchMovies from '../api';
 import './mainPage.css'
 import Search from '../components/SearchFilm'
 import MovieList from '../components/MovieList'
 import Favorites from '../components/Favorites'
+import api from '../api'
 
 export default function MainPage() {
 
     const [films, setFilms] = useState([]);
 
+
     const onSearchHandle = async (e) => {
         e.preventDefault();
-        const formData = new FormData(e.target); 
+        const formData = new FormData(e.target);
         const searchStr = formData.get('search');
 
         try {
-            const response = await searchMovies(searchStr);
+            const response = await api.searchMovies(searchStr);
             setFilms(response.Search);
         } catch (error) {
             console.log(error);

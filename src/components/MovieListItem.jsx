@@ -8,18 +8,16 @@ export default function MovieItems({ movie })  {
     const favs = useSelector((state) => state.favs);
     
     const handleAdd = () =>{
-        dispatch(addFavList({
+        dispatch(addFavList({ 
             id: `${movie.imdbID}`,
-            title: `${movie.Title}`,
+            title: `${movie.Title}`, 
             year: `(${movie.Year})`,
         }))
 
-
-        // favs.map(f => f.id === movie.imdbID ? console.log("NOOOO") : console.log("YESSS"));
     }
     
-    
-    return (
+     
+    return ( 
 
         <div className="movie-item">
             <img className="movie-item__poster" src={movie.Poster} alt={movie.Title} />

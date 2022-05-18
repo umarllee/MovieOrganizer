@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit'
 
 
 export const listSlice = createSlice({
-    name: "favs",
+    name: "favs", 
     initialState: [],
     reducers: {
         addFavList: (state, action) => {
@@ -25,6 +25,8 @@ export const listSlice = createSlice({
     },
 
 });
+
+export const selectFavs = (state) => state.favs;
 
 export const {addFavList, removeFromFavList, addFavListName} = listSlice.actions;
 

@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './Search.css';
-
 function SearchBox({ onSearch }) {
 
     const [searchStr, setSearchStr] = useState(['']);
  
-    return ( 
+    return (  
         <div className="search-box">
             <form className="search-box__form" onSubmit={onSearch}>
                 <label className="search-box__form-label">
@@ -24,7 +23,7 @@ function SearchBox({ onSearch }) {
                     type="submit"
                     className="search-box__form-submit"
                     disabled={!searchStr}
-                >
+                > 
                     Search
                 </button>
             </form>
