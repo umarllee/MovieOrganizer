@@ -14,14 +14,14 @@ const save = async (request) => {
     throw new Error(await response.text());
 }
 
-const get = async (id) => {
-    const response = await fetch('http://localhost:3200/favorite/'+id);
+// const get = async (id) => {
+//     const response = await fetch('http://localhost:3200/favorite/'+id);
 
-    if (!response.ok) {
-        throw new Error('You dont have any favourite films!');
-    }
-    return await response.json();
-}
+//     if (!response.ok) {
+//         throw new Error('You dont have any favourite films!');
+//     }
+//     return await response.json();
+// }
 
 function searchMovies (searchItem){
     const url = new URL(apiInfo.baseUrl); 
@@ -37,5 +37,5 @@ function searchMovies (searchItem){
     return response;
 }
 
-const api = {save, get, searchMovies};
+const api = {save, searchMovies};
 export default api;

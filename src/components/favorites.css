@@ -2,6 +2,7 @@
     box-sizing: border-box;
     border: 1px solid rgba(0, 8, 7);
     padding: 30px 20px;
+    
 }
 
 .favorites__name {
@@ -65,4 +66,28 @@
     color: #fff;
     font-weight: 700;
    
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 900px) {
+    .favorites__name {
+        font-size: 14px;
+        padding: 3px 8px;
+        
+    }
+
+    .favorites__save {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+} 
+
+
+@media (max-width: 899px) and (min-width: 750px) {
+    .favorites__name {
+        font-size: 14px;
+        padding: 3px 8px;
+        background-color: burlywood;
+    }
 }

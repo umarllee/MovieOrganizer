@@ -1,26 +1,44 @@
-import React from 'react';
+import React, { Component, useState } from 'react';
 import Navbar from './layout/NavigationBar';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import MainPage from './pages/MainPage'
 import FavoritesPage from './pages/FavouritePage'
-import api from './api'
+import LoaderPage from './pages/LoaderPage'
 
-function App() {
 
-        //  let id = "";
-        // api.get(localStorage.getItem("id")).then( t => id = t.id );
+export default class  App extends Component{
 
-  return (
-    <div className="">
-      <BrowserRouter>
-        <Navbar/>
-        <Routes>
-          <Route path='/' element={<MainPage/>}/>
-          <Route path='/favorite/:id' element={<FavoritesPage/>}/>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+   state ={ 
+     isLoading: false 
+  }
+
+  componentDidMount() {
+   setTimeout(() => {
+    this.setState({isLoading: true})
+   }, 2000);
 }
 
-export default App;
+  render(){
+    
+    return (
+      <div className="" style ={{backgroundColor : "#fff"}}>
+
+        {!this.state.isLoading ? <LoaderPage/> : 
+           (
+           <BrowserRouter>
+             <Navbar/>
+             
+             <Routes>
+               <Route path='/' element={<MainPage/> }/>
+               <Route path='/favorite/:id' element={<FavoritesPage/>}/>
+             </Routes>
+           </BrowserRouter>
+           )
+        }
+        
+        
+      </div>
+    );
+  }
+
+}

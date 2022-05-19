@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Search.css';
 function SearchBox({ onSearch }) {
 
-    const [searchStr, setSearchStr] = useState(['']);
+    const [searchStr, setSearchStr] = useState('');
  
     return (  
         <div className="search-box">

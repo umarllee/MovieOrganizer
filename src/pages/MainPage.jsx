@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
-import searchMovies from '../api';
 import './mainPage.css'
 import Search from '../components/SearchFilm'
 import MovieList from '../components/MovieList'
 import Favorites from '../components/Favorites'
 import api from '../api'
 
+
 export default function MainPage() {
+
+    
 
     const [films, setFilms] = useState([]);
 

@@ -1,0 +1,26 @@
+.con-favs{
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    color: #00bd58;
+    
+}
+
+.favList-name{
+    font-size: 20px;
+    background-color: rgb(220, 234, 247);
+    font-weight: 500;
+    padding: 1%;
+}
+.favs-list{
+    list-style: none;
+    border: 1px solid rgb(184, 181, 181);
+    padding: 1.5%;
+    margin: 1.5%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(12, 111, 224);
+    font-size: 16px;
+}

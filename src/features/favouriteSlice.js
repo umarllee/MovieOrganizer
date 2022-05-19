@@ -31,7 +31,7 @@ const favSlice = createSlice({
                 localStorage.clear();
             });
     }
-});
+}); 
 
 export const selectID = (state) => state.favourite.id;
 export const { init } = favSlice.actions;

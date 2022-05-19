@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 .header { 
     background: #496DDB;
-    padding: 2% calc(52% - 500px) 1%;
+    padding: 1%  1%;
 }
 
 .header__title {
@@ -11,10 +11,11 @@
 }
 
 h1{
-    margin: 0;
+    margin: 0 0 0 14%;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font: inherit; 
     vertical-align: baseline;
 }
+

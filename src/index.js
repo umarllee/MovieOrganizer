@@ -7,11 +7,14 @@ import {Provider} from 'react-redux'
 import listReducer from './features/reduxStorage'
 import favRed from './features/favouriteSlice'
 import apiReducer from './features/apiSlice'
-
+import favListName from './features/favListNameSlice'
+import favList from './features/FavListSlice'
 const store = configureStore({
   reducer: {
     favs: listReducer,
     favourite: favRed,
+    favListName: favListName,
+    favList : favList,
     api: apiReducer,
   },
 })  
