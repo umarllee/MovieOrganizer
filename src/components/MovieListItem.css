@@ -1,6 +1,7 @@
 .movie-item {
     padding: 20px;
-    background-color: #FFEEDB;
+    background-color: #f0edea;
+    color: #aaa9aa;
     display: flex;
     width: 87%;
     margin: 2% 0;
@@ -23,7 +24,7 @@
 
 .movie-item__add-button {
     border: none;
-    background-color: #496DDB;
+    background-color: #00bd58;
     padding: 10px 15px;
     color: #FFEEDB;
     font-size: 14px;
@@ -34,9 +35,15 @@
     cursor: pointer;
     opacity: 0.9;
     transition: all 0.2s linear;
-} 
+}
 
 @media (max-width: 1024px) and (min-width: 900px) {
+
+    .movie-item {
+        width: 95%;
+
+    }
+
     .movie-item__title {
         font-weight: 500;
         font-size: 18px;
@@ -50,9 +57,9 @@
         padding: 15px;
         width: 85%;
     }
- 
+
     .movie-item__add-button {
-       
+
         padding: 7px 13px;
         font-size: 13px;
     }
@@ -61,22 +68,103 @@
 @media (max-width: 899px) and (min-width: 750px) {
     .movie-item__title {
         font-weight: 500;
-        font-size: 18px;
-        background-color: aquamarine;
+        font-size: 16px;
     }
 
     .movie-item__poster {
-        height: 8rem;
+        height: 7rem;
     }
 
     .movie-item {
-        padding: 15px;
-        width: 85%;
+        padding: 13px;
+        width: 90%;
     }
- 
+
     .movie-item__add-button {
-       
         padding: 7px 13px;
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 749px) and (min-width: 550px) {
+    .movie-item__title {
+        font-size: 16px;
+    }
+
+    .movie-item__poster {
+        height: 7rem;
+    }
+
+    .movie-item {
+        padding: 13px;
+        width: 90%;
+    }
+
+    .movie-item__add-button {
+        padding: 7px 13px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 549px) and (min-width: 350px) {
+    .movie-item__title {
+        font-size: 16px;
+    }
+
+    .movie-item__poster {
+        height: 7rem;
+        width: 33%;
+        margin: 0 auto;
+    }
+
+    .movie-item {
+        margin: 2% auto;
+        padding: 13px;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .movie-item__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movie-item__add-button {
+        padding: 7px 13px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 349px) {
+    .movie-item__title {
+        font-size: 14px;
+    }
+
+    .movie-item__poster {
+        height: 7rem;
+        width: 33%;
+        margin: 0 auto;
+    }
+
+    .movie-item {
+        margin: 2% auto;
+        padding: 13px;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .movie-item__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movie-item__add-button {
+        padding: 5px 10px;
         font-size: 13px;
     }
 }

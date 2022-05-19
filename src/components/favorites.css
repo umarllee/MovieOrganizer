@@ -1,8 +1,8 @@
 .favorites {
     box-sizing: border-box;
-    border: 1px solid rgba(0, 8, 7);
+    border: 1px solid rgb(170, 170, 170);
     padding: 30px 20px;
-    
+
 }
 
 .favorites__name {
@@ -11,6 +11,7 @@
     font-size: 16px;
     padding: 5px 10px;
     border: 1px solid rgba(0, 8, 7, .5);
+    color: rgb(94, 93, 93);
     margin-bottom: 24px;
 }
 
@@ -20,26 +21,19 @@
 
 .favorites__save {
     border: none;
-    background-color: #496DDB;
+    background-color: #00bd58;
     padding: 10px 15px;
     color: #FFEEDB;
     font-size: 14px;
     transition: all 0.2s linear;
-    
+
 }
 
-.favorites-remove{
-    display: none;
-}
-
-.go-remove{
-    display: none;
-}
-.go-link{
-    background-color: #496DDB;
-    padding: 9px 20px;
-    text-decoration: none; 
-    color: #fff;
+.fav-disable {
+    border: none;
+    background-color: #15c56794;
+    color: rgb(240, 238, 238);
+    padding: 10px 15px;
     font-size: 14px;
 }
 
@@ -50,7 +44,7 @@
     transition: all 0.2s linear;
 }
 
-.listItem{
+.listItem {
     border: 1px solid rgb(221, 215, 215);
     list-style: none;
     padding: 2%;
@@ -59,13 +53,13 @@
     justify-content: space-between;
 }
 
-.delBtn{
+.delBtn {
     height: 20px;
     background-color: rgb(165, 10, 10);
     border: 1px solid rgb(165, 10, 10);
     color: #fff;
     font-weight: 700;
-   
+
 }
 
 
@@ -74,20 +68,92 @@
     .favorites__name {
         font-size: 14px;
         padding: 3px 8px;
-        
+
     }
 
     .favorites__save {
         padding: 8px 13px;
         font-size: 12px;
     }
-} 
+}
 
 
 @media (max-width: 899px) and (min-width: 750px) {
     .favorites__name {
         font-size: 14px;
         padding: 3px 8px;
-        background-color: burlywood;
+    }
+
+
+    .favorites__save {
+        padding: 8px 13px;
+        font-size: 12px;
+
+    }
+
+    .fav-disable {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+
+}
+
+
+@media (max-width: 749px) and (min-width: 550px) {
+    .listItem {
+        font-size: 15px;
+    }
+
+    .favorites {
+        margin: 5% 0;
+        padding: 35px 25px;
+
+    }
+
+    .favorites__save {
+        padding: 8px 13px;
+        font-size: 12px;
+
+    }
+
+    .fav-disable {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 549px) and (min-width: 350px) {
+    .listItem {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 349px) {
+    .listItem {
+        font-size: 13px;
+    }
+
+    .favorites {
+        margin: 5% 0;
+        padding: 20px 15px;
+
+    }
+
+    .favorites__save {
+        padding: 5px 10px;
+        font-size: 12px;
+
+    }
+
+    .fav-disable {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .favorites__name {
+        font-size: 13px;
+        padding: 3px 8px;
     }
 }

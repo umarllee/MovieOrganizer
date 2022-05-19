@@ -31,6 +31,10 @@ function Favorites() {
         dispatch(addFavListName({ favListName: favsName }));
     }
 
+  
+
+    // if(favs.length > 0 ) document.getElementById("btnSave").setAttribute('disables', false)
+    // else document.getElementById("btnSave").setAttribute('disables', true)
     return (
         <div className="favorites">
             <input id="inputName" placeholder="New list name: " className="favorites__name" onChange={(e) => setFavsName(e.target.value)} />
@@ -41,10 +45,10 @@ function Favorites() {
 
             {
                 apiID.api ?
-                    <Link id="goList" to={`/favorite/${apiID.api}`} onClick={handleSaveListName}>
+                    <Link id="goList" to={`/favorite/${apiID.api}`} className="favorites__save" onClick={handleSaveListName}>
                         Go list
                     </Link> :
-                    <button type="button" id="btnSave" onClick={handleSave}>Save list</button>
+                    (favs.length === 0 ? <button disabled={true} className="fav-disable">Save list</button> : <button type="button" id="btnSave" className="favorites__save" onClick={handleSave} >Save list</button>)
             }
         </div>
     );

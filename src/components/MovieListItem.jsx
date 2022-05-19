@@ -11,7 +11,7 @@ export default function MovieItems({ movie })  {
         dispatch(addFavList({ 
             id: `${movie.imdbID}`,
             title: `${movie.Title}`,  
-            year: `(${movie.Year})`,
+            year: `(${movie.Year})`, 
         }))
 
     }

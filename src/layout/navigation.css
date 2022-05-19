@@ -1,21 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-.header { 
-    background: #496DDB;
-    padding: 1%  1%;
+
+.header {
+    background: #aaa9aa;
+    padding: 1% 1%;
 }
 
 .header__title {
     font-family: 'Luckiest Guy', cursive;
-    color: #FFEEDB;
+    color: #fffbf7;
     font-size: 45px;
+    transition: all 0.2s linear;
+
 }
 
-h1{
-    margin: 0 0 0 14%;
+h1 {
+    margin: 0 0 0 13%;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit; 
+    font: inherit;
     vertical-align: baseline;
 }
 
+
+
+@media (max-width: 1024px) and (min-width: 900px) {
+    .header__title {
+        font-size: 42px;
+    }
+
+    h1 {
+        margin: 0 0 0 11%;
+    }
+}
+
+
+@media (max-width: 899px) and (min-width: 750px) {
+    .header__title {
+        font-size: 38px;
+    }
+
+    h1 {
+        margin: 0 0 0 9%;
+    }
+}
+
+
+@media (max-width: 749px) and (min-width: 550px) {
+    .header__title {
+        font-size: 35px;
+    }
+
+    h1 {
+        margin: 0 0 0 5%;
+    }
+}
+
+@media (max-width: 549px) and (min-width: 350px) {
+    .header__title {
+        font-size: 28px;
+    }
+
+    h1 {
+        margin: 0 0 0 2%;
+    }
+}
+
+@media (max-width: 349px) {
+    .header__title {
+        font-size: 23px;
+    }
+
+    h1 {
+        margin: 0 0 0 1%;
+    }
+}

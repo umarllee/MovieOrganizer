@@ -6,7 +6,7 @@ class Navbar extends Component {
         return (
             <div className="header">
                 <h1 className="header__title">
-                    MustSee
+                <i className="fa fa-film"></i>   Movie Organizer
                 </h1>
             </div>
         );

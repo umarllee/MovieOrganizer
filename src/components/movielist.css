@@ -1,0 +1,9 @@
+.list {
+    color: rgb(219, 11, 11);
+}
+
+@media (max-width: 899px) and (min-width: 750px) {
+    .list {
+        font-size: 15px;
+    }
+}

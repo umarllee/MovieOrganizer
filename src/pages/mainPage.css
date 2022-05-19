@@ -1,16 +1,93 @@
-
-.container{
+.container {
     display: flex;
     margin-top: 3%;
 }
 
-.searchList{
+.searchList {
     width: 45%;
-    margin-left: 15%;
+    margin-left: 13%;
 }
 
-.favList{
-    margin-left: 1%;
+.favList {
+    margin-left: 3%;
     width: 27%;
 }
 
+@media (max-width: 1024px) and (min-width: 900px) {
+    .searchList {
+        width: 45%;
+        margin-left: 11%;
+    }
+
+    .favList {
+        margin-left: 5%;
+        width: 29%;
+    }
+}
+
+@media (max-width: 899px) and (min-width: 750px) {
+
+    .searchList {
+        width: 45%;
+        margin-left: 9%;
+    }
+
+    .favList {
+        margin-left: 7%;
+        width: 35%;
+    }
+}
+
+@media (max-width: 749px) and (min-width: 550px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+    }
+
+    .searchList {
+        width: 85%;
+        margin-left: 9%;
+    }
+
+    .favList {
+        margin-left: 7%;
+        width: 85%;
+    }
+}
+
+@media (max-width: 549px) and (min-width: 350px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+    }
+
+    .searchList {
+        width: 85%;
+        margin: 0 auto 10%;
+    }
+
+    .favList {
+        margin-left: 7%;
+        width: 85%;
+    }
+}
+
+@media (max-width: 349px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3%;
+    }
+
+    .searchList {
+        width: 85%;
+        margin: 0 auto 10%;
+    }
+
+    .favList {
+        margin-left: 7%;
+        width: 85%;
+    }
+}
