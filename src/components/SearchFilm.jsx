@@ -24,7 +24,7 @@ function SearchBox({ onSearch }) {
                     className="search-box__form-submit"
                     disabled={!searchStr}
                 >  
-                    <i class="fa fa-search"></i> Search
+                    <i className="fa fa-search"></i> Search
                 </button>
             </form>
         </div>
