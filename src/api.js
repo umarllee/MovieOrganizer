@@ -8,9 +8,9 @@ const save = async (request) => {
         }
     });
 
-    if (response.ok) {
+    if (response.ok) { 
         return await response.json();
-    }
+    } 
     throw new Error(await response.text());
 }
 

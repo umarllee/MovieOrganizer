@@ -1,5 +1,8 @@
 .list {
-    color: rgb(219, 11, 11);
+    color: rgb(253, 1, 1);
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 500;
 }
 
 @media (max-width: 899px) and (min-width: 750px) {

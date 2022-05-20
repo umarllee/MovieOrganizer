@@ -1,26 +1,60 @@
 .con-favs{
-    width: 35%;
+    width: 40%;
     margin: 0 auto;
     text-align: center;
-    color: #00bd58;
-    
+    color: #fff;
+}
+
+.favs-list{ 
+    list-style: none;
+    border: 1px solid #023047;
+    padding: 2%;
+    margin: 2%;
+    background-color: #fafccbcb;
 }
 
 .favList-name{
     font-size: 20px;
-    background-color: rgb(220, 234, 247);
     font-weight: 500;
     padding: 1%;
+    width: 40%;
+    margin: 13% auto 3%;
+    background-color: #023047;
 }
-.favs-list{
-    list-style: none;
-    border: 1px solid rgb(184, 181, 181);
-    padding: 1.5%;
-    margin: 1.5%;
-}
+
 
 a{
     text-decoration: none;
-    color: rgb(12, 111, 224);
-    font-size: 16px;
+    color: #023047;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) and (min-width: 900px) {
+    .con-favs{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 899px) and (min-width: 750px) {
+    .con-favs{
+        width: 50%;
+    }
+}
+
+@media (max-width: 749px) and (min-width: 350px) {
+    .con-favs{
+        width: 50%;
+    }
+}
+
+@media (max-width: 349px) {
+    .con-favs{
+        width: 80%;
+    }
+    .favs-list{ 
+        margin: 2% auto;
+        padding: 0;
+    }
 }

@@ -9,9 +9,9 @@
     font-size: 16px;
     margin-right: 10px;
     width: 55%;
-    color: #919091;
+    color: #023047;
 }
-
+ 
 .search-box__form-input {
     box-sizing: border-box;
     display: block;
@@ -20,7 +20,7 @@
     font-size: 17px;
     padding: 5px 10px;
     border: 1px solid rgb(206, 206, 206);
-    color: rgb(94, 93, 93);
+    color: #023047;
 }
 
 .search-box__form-input:focus {
@@ -31,10 +31,10 @@
 .search-box__form-submit {
     margin-top: 4%;
     padding: 1% 2%;
-    border: none;
     transition: all 0.2s linear;
     color: #FFEEDB;
-    background-color: #00bd58;
+    border: 2px solid #023047;
+    background-color: #023047;
 
 }
 
@@ -58,7 +58,6 @@
     .search-box__form-submit {
         margin-top: 5%;
         padding: 0 2.5%;
-        background-color: #00bd58;
 
     }
 

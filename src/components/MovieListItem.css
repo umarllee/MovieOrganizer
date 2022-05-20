@@ -1,7 +1,8 @@
 .movie-item {
     padding: 20px;
-    background-color: #f0edea;
-    color: #aaa9aa;
+    border: 1.5px solid #023047;
+    background-color: #fafccb91;
+    color: #023047;
     display: flex;
     width: 87%;
     margin: 2% 0;
@@ -23,10 +24,10 @@
 }
 
 .movie-item__add-button {
-    border: none;
-    background-color: #00bd58;
+    border: 2px solid #023047;
+    background-color: #023047;
     padding: 10px 15px;
-    color: #FFEEDB;
+    color: #fff;
     font-size: 14px;
     transition: all 0.2s linear;
 }
@@ -114,7 +115,7 @@
 
     .movie-item__poster {
         height: 7rem;
-        width: 33%;
+        width: 28%;
         margin: 0 auto;
     }
 

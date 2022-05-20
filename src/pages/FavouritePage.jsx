@@ -12,7 +12,7 @@ export default function Favorite() {
   
  console.log(favs)
   return (
-    <div className="con-favs">
+    <div className="con-favs"> 
       {favsName.map(m => <p className="favList-name"> {m.favListName}</p>)}
       <ul className="favorites__list">
         {favs.map(m =>

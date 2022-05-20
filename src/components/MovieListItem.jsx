@@ -23,7 +23,7 @@ export default function MovieItems({ movie })  {
             <img className="movie-item__poster" src={movie.Poster} alt={movie.Title} />
             <div className="movie-item__info">
                 <h3 className="movie-item__title">{movie.Title} {`(${movie.Year})`}</h3>
-                <button type="button" className="movie-item__add-button" onClick = {handleAdd}>Add to favorite list ⭐</button>
+                <button type="button" className="movie-item__add-button" onClick = {handleAdd}>Add to favorite list 🌟</button>
             </div>
         </div>
 

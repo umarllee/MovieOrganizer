@@ -21,7 +21,7 @@ export default class  App extends Component{
   render(){
     
     return (
-      <div className="" style ={{backgroundColor : "#fff"}}>
+      <div className="">
 
         {!this.state.isLoading ? <LoaderPage/> : 
            (

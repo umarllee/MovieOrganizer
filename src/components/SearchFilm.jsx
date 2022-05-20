@@ -9,7 +9,7 @@ function SearchBox({ onSearch }) {
             <form className="search-box__form" onSubmit={onSearch}>
                 <label className="search-box__form-label">
                     Search movie by title:
-                    <input
+                    <input 
                         name='search'
                         type="text"
                         className="search-box__form-input"

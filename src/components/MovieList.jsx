@@ -9,7 +9,7 @@ const MovieList = ({ moviesList }) => {
             {moviesList?.length ?
                 moviesList.map((m) =>
                     <MovieListItem key={m.imdbID} movie={m}/>)
-                : 'Not content...'}
+                : 'Not content yet...'}
         </div>
     ) 
 }
